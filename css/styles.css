@@ -59,7 +59,9 @@ Variables
 Global Styles
 ===============
 */
-* {
+*,
+::before,
+::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -273,11 +275,53 @@ Hero
 About
 ===============
 */
-
-
 /* section add to globals */
 /* title add to globals */
 /* section center add to globals */
+.about-img,
+.about-info {
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 992px) {
+
+  .about-center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .about-img,
+  .about-info {
+    flex: 0 0 calc(50% - 2rem);
+    margin-bottom: 0;
+    align-self: center;
+  }
+
+}
+
+@media screen and (min-width: 1170px) {
+
+  .about-img {
+    position: relative;
+  }
+
+  .about-img::before {
+    content: '';
+    position: absolute;
+    border: 0.5rem solid var(--clr-primary-5);
+    width: 100%;
+    height: 100%;
+    top: -1.5rem;
+    left: -1.5rem;
+    /* z-index: -1; */
+  }
+
+  .about-photo {
+    position: relative;
+  }
+
+}
 
 /*
 =============== 
