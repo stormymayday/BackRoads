@@ -283,6 +283,10 @@ About
   margin-bottom: 2rem;
 }
 
+.about-info p {
+  max-width: 35rem;
+}
+
 @media screen and (min-width: 992px) {
 
   .about-center {
