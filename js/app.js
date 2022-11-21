@@ -35,3 +35,8 @@ scrollLinks.forEach(link => {
     });
   });
 });
+
+// disabling the submit button
+document.getElementById("submit").addEventListener("click", function (event) {
+  event.preventDefault()
+});
