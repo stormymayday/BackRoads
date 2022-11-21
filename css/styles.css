@@ -262,6 +262,17 @@ Navbar
   padding-left: 2.25rem;
 }
 
+.nav-links {
+  height: 0;
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.show-links {
+  /* height of the nav-links <ul> */
+  height: 280px;
+}
+
 /*
 =============== 
 Hero
